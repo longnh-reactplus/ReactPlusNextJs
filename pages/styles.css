@@ -1,0 +1,103 @@
+@font-face {
+  font-family: SVN-Poppins;
+  src: url(/assets/fonts/SVN-Poppins-Regular.otf);
+}
+html,
+body {
+  font-family: SVN-Poppins !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+select {
+  word-wrap: normal !important;
+  /* background-color: aquamarine; */
+  width: 162px  !important;
+  height: 38px  !important;
+  box-sizing: border-box  !important;
+  padding: 0 16px  !important;
+  border: none  !important;
+  background: #F4F6FA  !important;
+  border-radius: 38px  !important;
+  -webkit-appearance: none  !important;
+}
+
+option {
+  background: #F4F6FA !important;
+}
+
+.icont_select{
+  position: absolute !important;
+  top: 16px !important;
+  right: 16px !important;
+  z-index: 20 !important;
+  
+}
+
+img{
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    /* transform: translateX(-80%);
+    transition: 0.5s;
+    transition-delay: 3s; */
+  }
+  .PostCV-Left {
+    margin-right: 10px;
+  }
+  .main-page{
+    width: 100%;
+    overflow: hidden;
+  }
+ 
+  .icont_select{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+  .container-content p img {
+    width: 100% !important;
+    height: 50% !important;
+    margin: 6px 0;
+  }
+  select{
+   
+    max-width: 162px  !important;
+    width: 100%  !important;
+  }
+  .icont_select{
+   
+    top: 16px;
+    right: 20px !important;
+   
+    
+  }
+  .btn-cancel, .btn-submit {
+    padding: 5px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-cancel + .btn-submit{
+    margin-left: 10px;
+  }
+  
+}
+@media (min-width: 1400px){
+  .container {
+      max-width: 1080px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container {
+      max-width: 1080px;
+  }
+}
