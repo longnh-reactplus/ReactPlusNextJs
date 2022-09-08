@@ -560,7 +560,7 @@ const Menu = ({ isColor }) => {
             position: fixed;
             top: 0;
             right: ${!isClose ? `-80%` : `0`};
-
+            overflow: scroll;
             z-index: 999999999999999999999;
             height: 100vh;
             background-color: #f4f6fa;
