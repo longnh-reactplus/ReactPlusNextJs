@@ -210,41 +210,6 @@ const Menu = ({ isColor }) => {
                         }
                     />
                   </li>
-                  <li className="menu__item">
-                    <a>
-                      Webside khác
-                      <img
-                          src="/assets/icon/drop-down-icont.png"
-                          width="6px"
-                          height="4.98px"
-                          style={{ marginLeft: "3px" }}
-                          alt=""
-                      />
-                    </a>
-                    <div className="drop-down">
-                      <div className="box-center3">
-                        <Link href="/">
-                          <a>
-                            Webside Tiếng Việt
-                          </a>
-                        </Link>
-
-                        <Link href="https://react-plus.com/">
-                          <a target="_blank">
-                            Webside Tiếng Nhật
-                          </a>
-                        </Link>
-
-                        <Link href="https://reactplus.dev/home">
-                          <a target="_blank">
-                            Webside Tiếng Anh
-                          </a>
-                        </Link>
-
-                        <div className="triangle" />
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -354,18 +319,6 @@ const Menu = ({ isColor }) => {
             >
               Tin tức & Blog
             </a>
-          </Link>
-          <a className="menu-reponsive-item">
-            Webside khác
-          </a>
-          <Link href="/">
-            <a className="menu-reponsive-item-category">Webside Tiếng Việt</a>
-          </Link>
-          <Link href="https://react-plus.com/">
-            <a target="_blank" className="menu-reponsive-item-category">Webside Tiếng Nhật</a>
-          </Link>
-          <Link href="https://reactplus.dev/home">
-            <a target="_blank" className="menu-reponsive-item-category">Webside Tiếng Anh</a>
           </Link>
         </div>
         <style jsx>{`
