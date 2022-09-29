@@ -74,31 +74,39 @@ const Menu = ({ isColor }) => {
                               : ""
                         }
                     />
-                    <div className="drop-down">
+                    <div className="drop-down gioi_thieu">
                       <div className="box-center">
-                        <Link href="/gioi-thieu/gioi-thieu-react">
-                          <a
+                          <div
                               className={
-                                router.pathname == "/gioi-thieu/gioi-thieu-react"
-                                    ? "active_while"
-                                    : ""
+                                  router.pathname == "/gioi-thieu/gioi-thieu-react"
+                                      ? "hover_item active_color"
+                                      : "hover_item"
                               }
                           >
-                            Về React & React Native{" "}
-                          </a>
-                        </Link>
-                        <Link href="/gioi-thieu/gioi-thieu-cong-ty">
-                          <a
+                            <Link href="/gioi-thieu/gioi-thieu-react">
+                              <a
+                                  className="active_while"
+                              >
+                                Về React & React Native{" "}
+                              </a>
+                            </Link>
+                          </div>
+                          <div
                               className={
-                                router.pathname == "/gioi-thieu/gioi-thieu-cong-ty"
-                                    ? "active_while"
-                                    : ""
+                                  router.pathname == "/gioi-thieu/gioi-thieu-cong-ty"
+                                      ? "hover_item active_color"
+                                      : "hover_item"
                               }
                           >
-                            {" "}
-                            Công ty React Plus{" "}
-                          </a>
-                        </Link>
+                            <Link href="/gioi-thieu/gioi-thieu-cong-ty">
+                              <a
+                                  className="active_while"
+                              >
+                                {" "}
+                                Công ty React Plus{" "}
+                              </a>
+                            </Link>
+                          </div>
                         <div className="triangle" />
                       </div>
                     </div>
@@ -152,36 +160,41 @@ const Menu = ({ isColor }) => {
                               : ""
                         }
                     />
-                    <div className="drop-down">
-                      <div className="box-center2">
-                        <Link href="/dao-tao-su-kien/cac-khoa-dao-tao">
-                          <a
-                              className={
-                                router.pathname ==
-                                "/dao-tao-su-kien/cac-khoa-dao-tao"
-                                    ? "active_while"
-                                    : ""
-                              }
-                          >
-                            Các khoá đào tạo{" "}
-                          </a>
-                        </Link>
+                    <div className="drop-down dao_tao_su_kien">
+                        <div className="box-center2">
+                            <div
+                                className={
+                                    router.pathname == "/dao-tao-su-kien/cac-khoa-dao-tao"
+                                        ? "hover_item active_color"
+                                        : "hover_item"
+                                }
+                            >
+                                <Link href="/dao-tao-su-kien/cac-khoa-dao-tao">
+                                    <a
+                                        className="active_while"
+                                    >
+                                        Các khoá đào tạo{" "}
+                                    </a>
+                                </Link>
+                            </div>
+                            <div
+                                className={
+                                    router.pathname == "/dao-tao-su-kien/su-kien-thuong-ky"
+                                        ? "hover_item active_color"
+                                        : "hover_item"
+                                }
+                            >
+                                <Link href="/dao-tao-su-kien/su-kien-thuong-ky">
+                                    <a
+                                        className="active_while"
+                                    >
+                                        Sự kiện thường kỳ
+                                    </a>
+                                </Link>
+                            </div>
 
-                        <Link href="/dao-tao-su-kien/su-kien-thuong-ky">
-                          <a
-                              className={
-                                router.pathname ==
-                                "/dao-tao-su-kien/su-kien-thuong-ky"
-                                    ? "active_while"
-                                    : ""
-                              }
-                          >
-                            Sự kiện thường kỳ
-                          </a>
-                        </Link>
-
-                        <div className="triangle" />
-                      </div>
+                            <div className="triangle" />
+                        </div>
                     </div>
                     {/* </Link> */}
                   </li>
@@ -210,6 +223,73 @@ const Menu = ({ isColor }) => {
                         }
                     />
                   </li>
+                    <li className="menu__item">
+                        <a>
+                            Global
+                            <img
+                                src="/assets/icon/drop-down-icont.png"
+                                width="6px"
+                                height="4.98px"
+                                style={{ marginLeft: "3px" }}
+                                alt=""
+                            />
+                        </a>
+                        <div
+                            className= "drop-down global"
+                        >
+                            <div className="box-center3">
+                                <div
+                                    className={
+                                        router.pathname == "/"
+                                            ? "hover_item active_color"
+                                            : "hover_item"
+                                    }
+                                >
+                                    <Link href="/">
+                                        <a
+                                            className="active_while"
+                                        >
+                                            Vietnamese
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div
+                                    className={
+                                        router.pathname == "/japanese"
+                                            ? "hover_item active_color"
+                                            : "hover_item"
+                                    }
+                                >
+                                    <Link href="https://react-plus.com/">
+                                        <a
+                                            className="active_while"
+                                            target="_blank"
+                                        >
+                                            Japanese
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div
+                                    className={
+                                        router.pathname == "/english"
+                                            ? "hover_item active_color"
+                                            : "hover_item"
+                                    }
+                                >
+                                    <Link href="https://reactplus.dev/home">
+                                        <a
+                                            className="active_while"
+                                            target="_blank"
+                                        >
+                                            English
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="triangle" />
+                            </div>
+                        </div>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -320,6 +400,18 @@ const Menu = ({ isColor }) => {
               Tin tức & Blog
             </a>
           </Link>
+            <a className="menu-reponsive-item">
+                Global
+            </a>
+            <Link href="/">
+                <a className="menu-reponsive-item-category">Vietnamese</a>
+            </Link>
+            <Link href="https://react-plus.com/">
+                <a target="_blank" className="menu-reponsive-item-category">Japanese</a>
+            </Link>
+            <Link href="https://reactplus.dev/home">
+                <a target="_blank" className="menu-reponsive-item-category">English</a>
+            </Link>
         </div>
         <style jsx>{`
         .btn-menu {
@@ -359,25 +451,50 @@ const Menu = ({ isColor }) => {
           list-style: none;
           height: 50px;
           width: auto;
+          position: relative;
         }
         .menu__item .drop-down {
           display: none;
         }
         .menu__item:hover .drop-down {
           background-color: #00c6e8;
-          height: 48px;
-          width: 100%;
-          display: flex;
+          height: auto;
+          display: flex;  
           justify-content: center;
           align-items: center;
-          position: absolute;
-          top: 76px;
-          left: 0;
+          margin-top: 20px;
+          padding-top: 15px;
+          padding-bottom: 10px;
           z-index: 999;
+        }
+        
+        .menu__item:hover .box-center {
+          width: 200px;
+        }
+        .menu__item:hover .box-center2 {
+          width: 160px;
+        }
+        .menu__item:hover .box-center3 {
+          width: 130px;
+        }
+        
+        .menu__item:hover .gioi_thieu {
+          position: absolute;
+          left: -80px;
+        }
+        
+        .menu__item:hover .dao_tao_su_kien {
+          position: absolute;
+          left: -40px;
+        }
+        
+        .menu__item:hover .global {
+          position: absolute;
+          left: -40px;
         }
 
         .box-center {
-          display: flex;
+          display: block;
           justify-content: center;
           align-items: center;
           position: relative;
@@ -389,11 +506,11 @@ const Menu = ({ isColor }) => {
           background-color: #00c6e8;
           transform: rotate(45deg);
           position: absolute;
-          top: -2px;
-          left: -15px;
+          top: -20px;
+          right: 35%;
         }
         .box-center2 {
-          display: flex;
+          display: block;
           justify-content: center;
           align-items: center;
           position: relative;
@@ -405,11 +522,11 @@ const Menu = ({ isColor }) => {
           background-color: #00c6e8;
           transform: rotate(45deg);
           position: absolute;
-          top: -2px;
-          right: 15px;
+          top: -20px;
+          right: 35%;
         }
         .box-center3 {
-          display: flex;
+          display: block;
           justify-content: center;
           align-items: center;
           position: relative;
@@ -421,8 +538,8 @@ const Menu = ({ isColor }) => {
           background-color: #00c6e8;
           transform: rotate(45deg);
           position: absolute;
-          top: -2px;
-          right: -220px;
+          top: -20px;
+          right: 35%;
         }
 
         .active {
@@ -431,8 +548,15 @@ const Menu = ({ isColor }) => {
           width: 64px;
           background-image: url("/assets/icon/menu-active.png");
         }
+        .active_color {
+          background-color: #8c97ac40;
+        }
+        .active_color .active_while {
+          font-weight: bold;
+          font-size: 14px;
+        }
         .active_while {
-          border-bottom: 1.5px solid #ffffff;
+          padding: 10px 0;
         }
         .box-active-while {
           height: 3px;
@@ -461,9 +585,16 @@ const Menu = ({ isColor }) => {
           letter-spacing: -0.02em;
           color: #ffffff;
           text-decoration: none;
-          margin: 20px;
+          margin: 0 15px;
         }
-
+        
+        .hover_item {
+          width: auto;
+        }
+        .hover_item:hover {
+          background-color: #8c97ac40;
+        }
+        
         .box-menu-reponsive {
           display: none;
         }
@@ -474,6 +605,8 @@ const Menu = ({ isColor }) => {
         }
         .drop-down a:hover {
           color: #ffffff;
+          font-weight: bold;
+          font-size: 14px;
         }
         .triangle-relative {
           position: relative;
