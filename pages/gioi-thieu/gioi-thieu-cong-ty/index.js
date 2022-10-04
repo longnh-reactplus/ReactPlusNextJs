@@ -52,7 +52,7 @@ const GioiThieu = ({ data }) => {
                 />
               </div>
               <p className="content">
-                Quy mô 151 nhân sự. <br />
+                Quy mô 200 nhân sự. <br />
               </p>
             </div>
             <div className="company__scale__item">
@@ -65,7 +65,7 @@ const GioiThieu = ({ data }) => {
                 />
               </div>
               <p className="content">
-                Nhiều khách hàng lớn tại Nhật Bản.
+                Nhiều khách hàng lớn tại Nhật Bản, Mỹ và Úc.
                 <br />
               </p>
             </div>
@@ -113,16 +113,6 @@ const GioiThieu = ({ data }) => {
           </div>
         </div>
         <div className="container">
-          <h2 className="organizational-structure-title">
-            Cơ cấu tổ chức &amp; các công ty thành viên
-          </h2>
-          <div className="box-organizational-structure">
-            <img
-              src="/assets/images/Stargate_Sơ đồ công ty thành viên-01.png"
-              width="100%"
-              height="100%"
-            />
-          </div>
           <h2 className="organizational-structure-title">Đội ngũ chuyên gia</h2>
           <div className="container2">
             <div className="box-team-of-experts">

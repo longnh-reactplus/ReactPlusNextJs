@@ -126,7 +126,7 @@ const Home = ({ data }) => {
                     <img src="/assets/images/img02.svg" alt="" />
                   </div>
                   <p className="item__content">
-                    Quy mô 151 nhân sự và 100% dự án làm về React
+                    Quy mô 200 nhân sự và 100% dự án làm về React
                   </p>
                 </div>
                 <div className="item">

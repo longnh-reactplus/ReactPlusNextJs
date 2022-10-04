@@ -153,9 +153,6 @@ const IntroduceReact = ({ data }) => {
           <div className="box-frequently-asked-questions">
             <div className="container flex">
               <div className="asked-questions-left">
-                <h2 className="asked-questions-left-title">
-                  Những câu hỏi thường gặp về công việc React & React Native
-                </h2>
                 <button
                   className="btnmorefull"
                   onClick={() =>
@@ -170,45 +167,45 @@ const IntroduceReact = ({ data }) => {
                 </button>
                 <img
                   src="/assets/images/img46.svg"
-                  width="309px"
-                  height="241px"
+                  width="400px"
+                  height="auto"
                   alt=""
                 />
               </div>
-              <div className="asked-questions-right">
-                {data.map((value) => {
-                  const [isActive, setActive] = useState(false);
-                  const handleDropDown = () => setActive(!isActive);
-                  return (
-                    <div className="asked-question-item" key={value.id}>
-                      <div
-                        className={
-                          isActive
-                            ? "question-title question-title-active"
-                            : "question-title"
-                        }
-                        onClick={handleDropDown}
-                      >
-                        <span>{value.title}</span>
-                        <img
-                          src={
-                            isActive
-                              ? "/assets/icon/drop-down2-active.png"
-                              : "/assets/icon/drop-down2.png"
-                          }
-                          width="8px"
-                          height="4px"
-                          alt=""
-                        />
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={{ __html: value.content }}
-                        className={isActive ? "asked-text" : "asked-text-none"}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
+              {/*<div className="asked-questions-right">*/}
+              {/*  {data.map((value) => {*/}
+              {/*    const [isActive, setActive] = useState(false);*/}
+              {/*    const handleDropDown = () => setActive(!isActive);*/}
+              {/*    return (*/}
+              {/*      <div className="asked-question-item" key={value.id}>*/}
+              {/*        <div*/}
+              {/*          className={*/}
+              {/*            isActive*/}
+              {/*              ? "question-title question-title-active"*/}
+              {/*              : "question-title"*/}
+              {/*          }*/}
+              {/*          onClick={handleDropDown}*/}
+              {/*        >*/}
+              {/*          <span>{value.title}</span>*/}
+              {/*          <img*/}
+              {/*            src={*/}
+              {/*              isActive*/}
+              {/*                ? "/assets/icon/drop-down2-active.png"*/}
+              {/*                : "/assets/icon/drop-down2.png"*/}
+              {/*            }*/}
+              {/*            width="8px"*/}
+              {/*            height="4px"*/}
+              {/*            alt=""*/}
+              {/*          />*/}
+              {/*        </div>*/}
+              {/*        <div*/}
+              {/*          dangerouslySetInnerHTML={{ __html: value.content }}*/}
+              {/*          className={isActive ? "asked-text" : "asked-text-none"}*/}
+              {/*        />*/}
+              {/*      </div>*/}
+              {/*    );*/}
+              {/*  })}*/}
+              {/*</div>*/}
             </div>
           </div>
 
@@ -218,7 +215,7 @@ const IntroduceReact = ({ data }) => {
       <style jsx>{`
         .flex {
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
         }
         .backgroudReact {
           background-image: url(/assets/icon/Group2078.svg);
@@ -322,7 +319,7 @@ const IntroduceReact = ({ data }) => {
         }
         .btnmorefull {
           margin: 15px 0;
-          width: 281px;
+          width: 400px;
           height: 36px;
           box-sizing: border-box;
           border-radius: 44px;
