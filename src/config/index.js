@@ -250,6 +250,13 @@ export const ListItem = [
     content:
       "<p>Chuyên biệt về React <br/> Khả năng tăng trưởng nhanh <br/>Chuyên gia thực sự <br/>Phải hồi ngay tức thì</p>",
   },
+    {
+        _id: "4",
+        image: "ChungChi.png",
+        title: "Giải thưởng - Chứng chỉ",
+        content:
+            "<p>React Plus hoàn thành mục tiêu kép đạt chuẩn ISO 9001:2015 về quản lý chất lượng và ISO 27001:2013 về quản lý an toàn thông tin trong lĩnh vực Sản xuất và gia công phần mềm do Tổ chức Tiêu chuẩn hóa quốc tế (ISO) chứng nhận.<br/>Chúng tôi tự hào là đơn vị đầu tiên tại Việt Nam tập trung chuyên sâu về React & React Native, với khả năng cung cấp dịch vụ làm hài lòng mọi khách hàng theo tiêu chuẩn quốc tế.</p>",
+    },
 ];
 
 export const ListAppliedPosition = [
